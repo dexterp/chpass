@@ -1,0 +1,11 @@
+{
+  "User": "myuser",
+  "Oldpassword": "password",
+  "Newpassword": "password2015",
+  "Hosts": [
+    {
+      "Name": "localhost",
+      "Port": 22
+    }
+  ]
+}
