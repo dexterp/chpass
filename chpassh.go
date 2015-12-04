@@ -90,22 +90,14 @@ func chpaSsh(user, host, port, oldpass, newpass string) (string, error) {
 	return fmt.Sprintf(output, user, host, port, "OK", "Password changed"), nil
 }
 
-var author bool
 var confPath string
 
 func init() {
-	flag.BoolVar(&author, "author", false, "Print name of author")
 	flag.StringVar(&confPath, "config", "chpassh.json", "Path to JSON configuration file")
 }
 
 func main() {
 	flag.Parse()
-	// Get author name
-	if author == true {
-		fmt.Print("Written by Dexter Plameras\n")
-		os.Exit(0)
-	}
-
 	conf := config.Config{}
 
 	// Load hosts
