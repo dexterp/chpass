@@ -1,0 +1,1 @@
+A simple remote way to log in via SSH and change password using /bin/passwd.
